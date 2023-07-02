@@ -23,7 +23,7 @@ const StreamerDetails = () => {
       .then((response) => response.json())
       .then((data) => setStreamer(data))
       .catch((error) => {});
-  }, []);
+  });
 
   if (!streamer) {
     return <div>Loading...</div>;

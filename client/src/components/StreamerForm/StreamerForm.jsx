@@ -35,7 +35,7 @@ const StreamerForm = ({ streamers, setStreamers }) => {
       description: "",
     },
   });
-  const { register, handleSubmit, formState } = form;
+  const { register, handleSubmit, formState, reset } = form;
   const { errors } = formState;
 
   const onSubmit = async (streamerData) => {
@@ -49,6 +49,7 @@ const StreamerForm = ({ streamers, setStreamers }) => {
       });
       const data = await response.json();
       setStreamers([...streamers, data]);
+      reset();
     } catch (error) {
       console.log(error);
     }

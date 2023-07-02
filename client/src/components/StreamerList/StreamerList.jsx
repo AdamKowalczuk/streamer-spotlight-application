@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { StreamerListWrapper, SingleStreamer, IconWrapper, IconWithText, StreamerHeader, LeftSide } from "./StreamerList.styled";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
