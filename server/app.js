@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const streamerRoutes = require("./routes/streamers");
-const bodyParser = require("body-parser");
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -12,8 +11,6 @@ mongoose.connect("mongodb+srv://adamkowalczuk:YmwnlYUkIc8KvYRE@cluster0.h2jgmex.
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
-app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");

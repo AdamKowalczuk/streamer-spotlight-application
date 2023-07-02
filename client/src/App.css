@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Inter-Regular";
   src: url("/src/assets/fonts/Inter-Regular.ttf") format("truetype");
 }
@@ -10,14 +10,12 @@ body {
   margin: 0;
   font-family: "Inter-Regular";
   font-style: normal;
-  font-weight: 600;
-  background-color: #12141d;
+  font-weight: 500;
   overflow-x: hidden;
   width: 100vw;
 }
 
-
 a{
   text-decoration: none;
 }
- */
+
